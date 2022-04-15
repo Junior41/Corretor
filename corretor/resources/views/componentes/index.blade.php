@@ -1,5 +1,3 @@
-@extends('layout.index')
-
 <div>
     <center>
         <h2>Correção</h2>
@@ -28,28 +26,3 @@
         </div>
     </center>
 </div>
-
-
-<script>
-    $(document).ready(function() {
-        $("#content").scroll(function() {
-            if ($(this).scrollTop() + $(this).height() == $(this).get(0).scrollHeight) {
-                // a rolagem chegou ao fim, fazer algo aqui.
-                console.log("Chegou ao fim");
-                $.ajax({
-                    type: "get",
-                    url: "/paginacao/0/10/{{$porcentagemErro}}",
-                    success: function(data) {
-                        //manipula os dados
-                        //$("#content ul").append("<li>" + item + "</li>");
-                        console.log("deu bom");
-                    },
-                    error: function() {
-                        console.log("deu ruim.");
-                    }
-                });
-            }
-        });
-    });
-
-</script>
