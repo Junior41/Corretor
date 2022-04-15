@@ -1,0 +1,69 @@
+body div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    background-color: #EEF4ED;
+}
+body div form{
+    width: 40rem;
+    height: 40%;
+    padding: 2rem 1rem 2rem 1rem;
+    border: 2px groove #444140;
+    border-radius: 1rem;
+    background-color: #FFF8EE;
+}
+
+body div center{
+    width: 40rem;
+    height: 60%;
+    padding: 2rem 1rem 2rem 1rem;
+    border: 2px groove #444140;
+    border-radius: 1rem;
+    background-color: #FFF8EE;
+}
+
+body div center .card-box{
+    padding: 0;
+    margin: 3rem 0 3rem 0;
+    height: 50%;
+}
+body div form .form-group{
+    display: grid;
+    color: #2B303A;
+    text-align: center;
+    height: 100%;
+    padding: 0;
+    background-color: #FFF8EE;
+}
+body div form .form-group #formFile{
+    height: 2.3rem;
+    border: 1px outset #444140;
+}
+
+body div form .form-group .btn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body div form .form-group .btn button{
+    transition: 0.5s;
+    max-width: 15rem;
+    align-items: center;
+}
+
+body div form .form-group .btn button:hover{
+    background-color: #2B303A;
+}
+
+body nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    border-bottom: 1px inset #444140;
+    background-color: #2B303A;
+}
