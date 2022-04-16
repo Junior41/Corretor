@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreFileRequest;
+use App\Models\Palavra;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\ViewErrorBag;
+
 
 class mainController extends Controller
 {
@@ -14,26 +16,63 @@ class mainController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-
     private $palavras;
+    private $linhas;
 
     public function index()
     {
         return view("layout.index");
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-    public function paginacao($inicio, $fim, $porcentagemErro){
-        $palavras = array_slice($this->palavras, $inicio, $fim);
-        return View('layout.index', compact('palavras', 'porcentagemErro'))->with('sucess', 'Correção finalizada com sucesso!');
+    public function paginacao($inicio, $quantidade){
+        $arquivo = Storage::get('public/Arvore Digital/correcao.txt');
+        $palavra = "";
+        $linha = "";
+        $palavras = [];
+        $linhas = [];
+        $data = [];
+        $indiceInicio = 0;
+        $i = 0;
+
+        // encontrando a posição inicial no arquivo
+        while($indiceInicio < strlen($arquivo) && $i != $inicio * 2){
+            $indiceInicio++;
+
+            if($arquivo[$indiceInicio] == '*')
+                $i++;
+        }
+
+        if($indiceInicio >= strlen($arquivo))
+            return $data;
+
+        if($inicio != 0)
+            $indiceInicio++;
+
+        // percorrendo o arquivo e separando as palavras e as linhas
+        for($i = 0; $i < $quantidade; $i++){
+            if($indiceInicio >= strlen($arquivo))
+                break;
+
+            while($arquivo[$indiceInicio] != '*'){
+                $palavra .= $arquivo[$indiceInicio];
+                $indiceInicio++;
+            }
+            array_push($palavras, $palavra);
+            $indiceInicio++;
+            while($arquivo[$indiceInicio] != '*'){
+                $linha .= $arquivo[$indiceInicio];
+                $indiceInicio++;
+            }
+            array_push($linhas, intval($linha));
+            $palavra = "";
+            $linha = "";
+            $indiceInicio++;
+        }
+
+        array_push($data, $palavras);
+        array_push($data, $linhas);
+
+        return $data;
     }
     /**
      * Store a newly created resource in storage.
@@ -47,64 +86,16 @@ class mainController extends Controller
 
         // execultando o script em c
         shell_exec("cd storage; cd 'Arvore Digital'; make; ./arvoreTrie");
-        $arquivo = Storage::get('public/Arvore Digital/correcao.txt');
 
-        $this->palavras = explode(" ", $arquivo);
-        $contPalavras = $this->palavras[count($this->palavras) - 2];
-        $contPalavrasIncorretas = $this->palavras[count($this->palavras) - 1];
+        $erro = Storage::get('public/Arvore Digital/porcentagemErro.txt');
 
-        if($contPalavras != 0)
-            $porcentagemErro = round(($contPalavrasIncorretas * 100) / $contPalavras, 2);
-        else
-            $porcentagemErro = 0;
 
-        array_splice($this->palavras, count($this->palavras) - 2, 2);
+        $porcentagemErro = floatval($erro);
 
-        return mainController::paginacao(0, 100, $porcentagemErro);
+        $data = mainController::paginacao(0, 50);
+
+        return View('layout.index', compact('data', 'porcentagemErro'))->with('sucess', 'Correção finalizada com sucesso!');
+
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

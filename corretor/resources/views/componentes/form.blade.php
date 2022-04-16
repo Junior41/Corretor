@@ -12,6 +12,8 @@
                     <li>{{ $error }}</li>
                 @endforeach
             @endif
+
         </div>
+
     </form>
 </div>
