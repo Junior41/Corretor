@@ -4,14 +4,7 @@
         <link rel="stylesheet" href= "{{asset('css/app.css')}}">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-        <!-- jQuery -->
-        <script src="assets/js/jquery-2.1.0.min.js"></script>
-
-        <!-- Bootstrap -->
-        <script src="assets/js/bootstrap.min.js"></script>
-
-
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     </head>
     <body>
         <nav class="nav">
@@ -20,8 +13,14 @@
             <a class="nav-link active" href="https://github.com/Junior41"><i class="bi-github"></i></a>
         </nav>
         @isset($data)
-            @component('componentes.index', ["palavras" => $data[0], "linhas" => $data[1], "porcentagemErro" => $porcentagemErro] )
+            @if(count($data) > 0)
+                @component('componentes.index', ["palavras" => $data[0], "linhas" => $data[1], "porcentagemErro" => $porcentagemErro] )
+            @else
+                @component('componentes.index', ["palavras" => [], "linhas" => [], "porcentagemErro" => $porcentagemErro] )
+            @endif
+
             @endcomponent
+
         @else
             @component('componentes.form')
             @endcomponent

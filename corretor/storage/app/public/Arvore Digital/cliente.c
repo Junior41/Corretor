@@ -24,7 +24,7 @@ char* leStr(){
 
 
 char* preencheAlfabeto(){
-    char aux[] = {-96,-95,-94,-93,-89,-87,-83,-76,-70,'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '\0'};
+    char aux[] = {-96,-95,-94,-93,-89,-87,-86,-83,-77,-76,-75,-70,'$','-','a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '\0'};
     char *alfabeto = malloc(((strlen(aux) + 1 ) * sizeof(char)));
     strcpy(alfabeto, aux);
 
@@ -87,7 +87,7 @@ void correcao(char *nomeArq){
         fscanf(arqCorrecao, "%c", &c);
 
         char aux = tolower(c);
-        if(c < -97)
+        if(c < -97 && lenStr > 1 && str[lenStr-2] == -61)
             aux += 32;
 
 
@@ -95,9 +95,9 @@ void correcao(char *nomeArq){
             str[lenStr-1] = c;
             str = realloc(str, ++lenStr * sizeof(char));
         }else{
-
-            if(lenStr > 1){
+            if(lenStr > 2){
                 str[lenStr-1] = '\0';
+
                 buscaDigital(arv, arv->raiz, str, &l, &a);
 
                 if(!a){ // palavra incorreta

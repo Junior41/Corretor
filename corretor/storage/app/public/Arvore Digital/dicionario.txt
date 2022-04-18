@@ -478,6 +478,8 @@ josé
 joão
 joãozinho
 junior
+júnior
+juniores
 júpiter
 kazuo
 kioto
@@ -36459,6 +36461,7 @@ avantajáveis
 avante
 avança
 avançada
+avanços
 avançadas
 avançado
 avançados
@@ -47981,6 +47984,7 @@ capachos
 capacidade
 capacidades
 capacita
+capacitação
 capacitada
 capacitadas
 capacitado
@@ -54139,6 +54143,7 @@ cidra
 cidreira
 cidreiras
 ciente
+cientes
 cientista
 cientistas
 científica
@@ -57560,6 +57565,7 @@ colméia
 colméias
 colo
 coloca
+coloca-se
 colocada
 colocadas
 colocado
@@ -61746,6 +61752,7 @@ conditional
 condito
 condiz
 condize
+condizente
 condizei
 condizeis
 condizem
@@ -65712,6 +65719,7 @@ contemporâneos
 contenda
 contendais
 contendam
+contenção
 contendamo
 contendamos
 contendas
@@ -68291,6 +68299,7 @@ corolas
 corolário
 corolários
 coronel
+coronavírus
 coronha
 coronhada
 coronhadas
@@ -69580,6 +69589,8 @@ coveiros
 covergente
 covergentes
 covinha
+covid
+covid-
 covinhas
 coxa
 coxas
@@ -93101,6 +93112,7 @@ destilássemos
 destilávamos
 destiláveis
 destina
+destina-se
 destinada
 destinadas
 destinado
@@ -95077,6 +95089,7 @@ devia
 deviam
 devias
 devida
+devidamente
 devidas
 devido
 devidos
@@ -107464,6 +107477,8 @@ empreende
 empreendedor
 empreendedora
 empreendedoras
+empreendedorismo
+empreendedorismos
 empreendedores
 empreendei
 empreendeis
@@ -114770,6 +114785,7 @@ enraiveçamos
 enraiveças
 enraiveço
 enraiza
+e-mail
 enraizada
 enraizadas
 enraizado
@@ -125864,6 +125880,8 @@ espirituosa
 espirituosas
 espirituoso
 espirituosos
+espirito
+espiritos
 espiro
 espirou
 espirra
@@ -127838,6 +127856,7 @@ estendem
 estendemo
 estendemos
 estendendo
+estendendo-se
 estender
 estendera
 estenderam
@@ -141439,6 +141458,7 @@ formalizamo
 formalizamos
 formalizando
 formalizar
+formalizada
 formalizara
 formalizaram
 formalizaras
@@ -147072,6 +147092,7 @@ geriria
 geririam
 geririas
 gerirmo
+gmail
 gerirmos
 gerirá
 gerirás
@@ -155113,6 +155134,7 @@ incansável
 incapacidade
 incapacidades
 incapacitada
+capacitação
 incapacitadas
 incapacitado
 incapacitados
@@ -158971,7 +158993,10 @@ iniciados
 iniciai
 iniciais
 inicial
+inidoneidade
 inicializa
+inabilitada
+inabilitação
 inicializada
 inicializadas
 inicializado
@@ -160668,6 +160693,7 @@ instruísses
 instruíste
 instruístes
 instá
+item
 instáramos
 instáreis
 instásseis
@@ -177463,6 +177489,7 @@ mitifiquemos
 mitifiques
 mitiga
 mitigado
+mitigação
 mitigai
 mitigais
 mitigam
@@ -177620,6 +177647,7 @@ mobilies
 mobilio
 mobiliou
 mobiliza
+mobilizadora
 mobilizado
 mobilizai
 mobilizais
@@ -183546,6 +183574,7 @@ observam
 observamo
 observamos
 observando
+observando-se
 observar
 observara
 observaram
@@ -188256,6 +188285,7 @@ panda
 pandarecos
 pandas
 pandeiro
+pandemia
 pandeiros
 pandemônio
 pandora
@@ -189453,6 +189483,8 @@ particionávamos
 particionáveis
 participa
 participada
+participante
+participantes
 participadas
 participado
 participados
@@ -198368,6 +198400,7 @@ pote
 potenciais
 potencial
 potencialidade
+potencializando
 potencialidades
 potencialmente
 potenciação
@@ -198386,6 +198419,7 @@ potássio
 potáveis
 potável
 potência
+potencializar
 potências
 pouca
 poucas
@@ -200905,6 +200939,7 @@ prescritos
 prescrição
 prescriçãos
 presencia
+presencial
 presenciada
 presenciadas
 presenciado
@@ -202337,6 +202372,7 @@ prioritárias
 prioritário
 prioritários
 prioriza
+priorizadas
 priorizado
 priorizai
 priorizais
@@ -204448,6 +204484,7 @@ propinas
 propomo
 propomos
 proponde
+proponente
 propondes
 propondo
 proponha
@@ -206774,6 +206811,7 @@ púbis
 pública
 públicas
 público
+público-alvo
 públicos
 púlpito
 púlpitos
@@ -207650,6 +207688,10 @@ quitandeiro
 quitandeiros
 quitando
 quitar
+quitada
+quitado
+quitadas
+quitados
 quitara
 quitaram
 quitaras
@@ -213095,6 +213137,10 @@ reconquistássemos
 reconquistávamos
 reconquistáveis
 reconsideração
+reconsidera
+reconsiderar
+reconsiderado
+reconsiderada
 reconsiderações
 reconstitua
 reconstituais
@@ -214071,6 +214117,7 @@ redefinimo
 redefinimos
 redefinindo
 redefinir
+redefinição
 redefinira
 redefiniram
 redefiniras
@@ -217166,6 +217213,7 @@ regavas
 regaço
 regaços
 rege
+reger-se-á
 regei
 regeis
 regem
@@ -217771,6 +217819,9 @@ regularias
 regularidade
 regularidades
 regulariza
+regularizas
+regularizadas
+regularizos
 regularizado
 regularizai
 regularizais
@@ -230462,6 +230513,7 @@ rústica
 rústicas
 rústico
 rústicos
+r$
 saara
 sabará
 sabatina
@@ -232022,6 +232074,7 @@ sanamo
 sanamos
 sanando
 sanar
+sanada
 sanara
 sanaram
 sanaras
@@ -232979,6 +233032,8 @@ saúdo
 saúva
 saúvas
 se
+sênior
+sêniores
 seara
 searas
 sebastianismo
@@ -233817,6 +233872,7 @@ selava
 selavam
 selavas
 sele
+seleção
 seleciona
 selecionada
 selecionadas
@@ -235375,6 +235431,7 @@ sexólogos
 seção
 seções
 si
+site
 siberiana
 siberianas
 siberiano
@@ -237779,6 +237836,10 @@ sociopolítica
 sociopolíticas
 sociopolítico
 sociopolíticos
+socioeconômicas
+socioeconômica
+socioeconômico
+socioeconômicos
 socióloga
 sociólogas
 sociólogo
@@ -239790,6 +239851,7 @@ suavíssimas
 suavíssimo
 suavíssimos
 sub
+subsidiar
 suba
 subais
 subaltena
@@ -242559,6 +242621,7 @@ supervenientes
 superveniência
 superveniências
 supervisiona
+supervisora
 supervisionada
 supervisionadas
 supervisionado
@@ -259682,6 +259745,9 @@ vivemo
 vivemos
 vivencia
 vivenciado
+vivenciada
+vivenciados
+vivenciadas
 vivenciai
 vivenciais
 vivenciam
