@@ -48,7 +48,7 @@
             }
         },
           error: function() {
-              console.log("deu ruim")
+              console.log("Houve um erro:")
           }
         });
       }
